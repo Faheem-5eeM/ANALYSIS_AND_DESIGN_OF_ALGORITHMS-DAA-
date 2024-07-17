@@ -74,7 +74,7 @@ void generateRandomno(int n)
 
 int main()
 {
-       int n = 6000;
+       int n = 100;
        generateRandomno(n);
        
        FILE*file = fopen("randomNo.txt","r");
@@ -92,6 +92,12 @@ int main()
 
 
         printf("Time take to sort %d elements using MergeSort method is : %.10f ",n,elapsedTime);
+
+        printf("\nTherefore the sorted array is :\n");
+        for(int i=0;i<n;i++)
+        {
+              printf("%d  ",&numbers[i]);
+        }
 
 
 
